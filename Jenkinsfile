@@ -1,28 +1,13 @@
-properties([ parameters([
-  string( name: 'CLUSTER_NAME', defaultValue: ''),
-  string( name: 'REGION', defaultValue: ''),
-  string( name: 'WORKER_MIN_NODE_COUNT', defaultValue: ''),
-  string( name: 'WORKER_MAX_NODE_COUNT', defaultValue: ''),
-  string( name: 'WORKER_NODE_SIZE', defaultValue: ''),
-]), pipelineTriggers([]) ])
-
-// Environment Variables.
-env.region = REGION
-env.environment = CLUSTER_NAME
-env.min_node_count = WORKER_MIN_NODE_COUNT
-env.max_node_count = WORKER_MAX_NODE_COUNT
-env.node_vm_size = WORKER_NODE_SIZE
- environment {
-        
-        PATH = "$PATH:/usr/local/bin"
-        
-    }
-
 pipeline {
     
     agent any
     tools{
         "org.jenkinsci.plugins.terraform.TerraformInstallation" "TERRAFORM_HOME"
+    }
+  environment {
+        
+        PATH = "$PATH:/usr/local/bin"
+        
     }
     
     stages {
