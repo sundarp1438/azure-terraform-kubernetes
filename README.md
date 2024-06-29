@@ -1,10 +1,9 @@
 # Pre-requisites:
   ### No. Of VMs: 1 (Jenkins)
-# Tools Installed:
-  ### Java
+# DevOps Tools and VCS:
   ### Jenkins
-  ### Azure-Cli
   ### Terraform
+  ### Git / GitHub
 # Jenkins Plugins:
   ### Azure CLI Plugin
   ### Azure Credentials
