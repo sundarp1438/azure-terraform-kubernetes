@@ -10,18 +10,6 @@ variable "region" {
   description = "Region"
 }
 
-# Virtual Network CIDR
-variable "vnetCIDR" {
-  type        = list(string)
-  description = "Virtual Network CIDR"
-}
-
-# subnet CIDRs
-variable "subnetCIDRs" {
-  type        = list(string)
-  description = "Subnet CIDRs"
-}
-
 # environment
 variable "environment" {
   type        = string
