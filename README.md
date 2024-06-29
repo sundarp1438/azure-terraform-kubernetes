@@ -10,6 +10,6 @@
   ### Azure Credentials
   ### Terraform Plugin
 # Jenkins Installation:
-sudo yum install java-11* -y
-sudo yum install wget -y
+### sudo yum install java-11* -y
+### sudo yum install wget -y
 
