@@ -33,10 +33,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     vm_size    = "Standard_DS2_v2"
     vnet_subnet_id = azurerm_subnet.aks.id
   }
-  service_principal {
-    client_id     = "73e7d17d-9f8a-40a0-a173-102b80347bcf"
-    client_secret = "3yw8Q~RMnk5ZPZo1A~0rxfKtOt0NYOaQdfjNsc0a"
-  }
+  
 
   identity {
     type = "SystemAssigned"
